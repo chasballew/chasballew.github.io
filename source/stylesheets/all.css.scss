@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* include Boostrap overrides here */ 
+/* see bootstrap/_variables.scss for what you can override */
+
+$navbarBackgroundHighlight: #003366;
+$navbarLinkColor: 			#fff;
+$navbarLinkColorHover:		#999;
+$navbarLinkColorActive:		#555;
+
+$sansFontFamily:        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:       Arvo, Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+/* remove responsive if you want */
+ @import "bourbon/bourbon";
+ @import "bootstrap/bootstrap";
+ @import "bootstrap/responsive";
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+body {
+	padding-top:40px;
+}
+
+/* responsive navbar */
+// Nav and dropdown links in navbar
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+  }
+
+ .home-header {
+ 	width: 100%;
+ }
+
+
+/* ==========================================================================
+   Customs media queries
+   ========================================================================== */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+.home-header{
+	height: 468px;
+ 	background: url(../images/steps_1170.jpg);
+	}
+}
+
+/* no mans land */
+@media (min-width: 980px) and (max-width: 1199px) {
+	
+	.home-header{
+	height: 470px;
+ 	background: url(../images/steps_940.jpg);
+	}
+}
+
+/* fixes all body/navbar issues below*/
+@media (max-width: 979px) {
+	body {
+		padding-top: 0px;
+	}
+
+	.navbar-fixed-top {
+		margin-bottom: 0px;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.home-header{
+	height: 470px;
+ 	background: url(../images/steps_724.jpg);
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+	.home-header{
+	height: 364px;
+ 	background: url(../images/steps_727.jpg);
+ 	background-position: right;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px){ 
+    /* retina stuff here */
+    
+}
