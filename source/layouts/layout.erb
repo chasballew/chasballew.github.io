@@ -39,9 +39,10 @@
                     </a>
                     <a class="brand" href="#" >c/b | Chas Ballew</a>
                     <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
+                        <ul class="nav pull-right hidden-desktop">
+                            <li><a href="#current">Current projects</a></li>
                             <li><a href="#about">About me</a></li>
-                            <li><a href="#contact">Find me</a></li>
+                            <li><a href="#contact">Contact me</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -51,7 +52,7 @@
     
         <%= yield %>
 
-        <div class="container">
+        <div class="container" id="footer">
             <hr>
             <footer>
                 <p class="text-center"><small>&copy; c/b 2013</small></p>

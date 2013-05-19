@@ -6,103 +6,123 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title>Chas Ballew</title>
+        <meta name="description" content="Founder at Aptible">
+        <link rel="canonical" href="http://www.chasballew.com"/>
         <meta name="viewport" content="width=device-width">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Welcome to Bootman</title>
-    
-    <link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+        <meta name="twitter:creator" content="@chasballew">
+        <meta property="og:title" content="About Chas Ballew" />
+        <meta property="og:url" content="http://www.chasballew.com" />
+
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+
+        <link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="/javascripts/all.js" type="text/javascript"></script>
+        <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
   
-  <body class="index">
+  <body>
     <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Project name</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="nav-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#" >c/b | Chas Ballew</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right hidden-desktop">
+                            <li><a href="#current">Current projects</a></li>
+                            <li><a href="#about">About me</a></li>
+                            <li><a href="#contact">Contact me</a></li>
                         </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form pull-right">
-                    <input class="span2" type="text" placeholder="Email">
-                    <input class="span2" type="password" placeholder="Password">
-                    <button type="submit" class="btn">Sign in</button>
-                </form>
-            </div><!--/.nav-collapse -->
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div> 
+
+    
+        <div class="container" id="main-page-wrapper">
+
+    <div class="home-header">
+        <div class="header-container">
+            <div class="header-text">Chas</div>
+            <div class="header-text">Ballew</div>
         </div>
     </div>
-</div> 
 
-
-    <!-- Bootstrap/HTML5 Boilerplate demo -->
-<div class="container">
-
-    <!-- Main hero unit for a primary marketing message or call to action -->
-    <div class="hero-unit">
-        <h1>Welcome to Bootman!</h1>
-        <p>Bootman is a template for building static sites using Middleman. It includes the HTML5 Boilerplate code, the Bootstrap js code, Thomas McDonald's bootstrap-sass conversion, and Thoughtbot's Bourbon Sass mixin library.</p>
-        <p><a class="btn btn-primary btn-large">This is a button! &raquo;</a></p>
-    </div>
-
-    <!-- Example row of columns -->
     <div class="row">
-        <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="span4" id="intro">
+            <h2>Hi, I'm Chas.</h2>
+            <p>I'm a lawyer, soldier, armchair psychologist, and would-be hacker. I live and work in Washington, DC.</p>
+            <p>I want to build technology and human processes that help people lead healthy, happy lives.</p>
+            <p>My long-term goal is to build a company that empowers smart, passionate employees to help others, pursue rewarding careers, and enjoy their lives at the same time. Think a Fortune 500 company that also tops Fortune's list of Best Companies to Work For.</p>
+            <p><em>Question: Isn't that outrageously difficult?</em>
+                <br>
+                <em>Answer:</em> Yes.</p>
+            <hr class="visible-phone">
         </div>
-        <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="span4" id="current">
+            <h2>Current projects:</h2>
+            <p>I'm interested in making it easier for people and their doctors to gather and analyze data about themselves. I'm particularly interested in lowering barriers to use of self-tracking and quantification technology.</p>
+            <p>Right now, I'm working on Proof, a behavioral health tracking app that runs over text messaging.</p>
+            <p>I want to develop Proof into an SMS campaign platform for health interventions. Providers would be able to use the platorm to run clinically-validated programs for 
+                <a href="http://jamia.bmj.com/content/early/2012/04/12/amiajnl-2011-000748.abstract" target="_blank">medication adherence</a>, 
+                <a href="http://www.biomedcentral.com/1471-2261/12/36" target="_blank">cardiac rehab</a>, 
+                <a href="http://www.ajmc.com/articles/Care-by-Cell-Phone-Text-Messaging-for-Chronic-Disease-Management" target="_blank">chronic disease management</a>, 
+                <a href="http://mobihealthnews.com/18822/center-for-connected-health-to-study-sms-for-managing-cancer-pain/" target="_blank">pain management</a>, 
+                <a href="http://www.ihealthbeat.org/articles/2013/5/3/study-text-messages-improve-outcomes-for-children-with-asthma.aspx" target="_blank">asthma monitoring</a>, 
+                <a href="http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD006611.pub3/abstract;jsessionid=045CC4FE821F9763C9909D05AD7AFBE3.d03t01" target="_blank">smoking cessation</a>, etc. Researchers would be able to use the platform to develop new studies on the efficacy of SMS interventions.</p>
+            <p>More broadly, I'm interested in building technology that will help Accountable Care Organizations and other participants in capitation models become competetive through better care coordination and reductions in hospitalizations.</p>
+            <hr class="visible-phone">
        </div>
-        <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="span4" id="about">
+            <h2>About me:</h2>
+            <p>I graduated from Princeton in 2006 with a degree in psychology. My advisor, <a href="https://psych.princeton.edu/psychology/research/todorov/index.php" target="_blank">Alex Todorov</a>, and I published work on how <a href="http://www.pnas.org/content/104/46/17948.abstract" target="_blank">fast cognitive processes can predict elections</a>.</p>
+
+            <p>I taught as a graduate assistant for two years in the Department of Psychology at the University of Michigan, where I graduated from law school in 2009. During law school, I learned about the legal aspects of startup formation and financing, and made some great friends in one of the <a href="http://sitemaker.umich.edu/finance629/home" target="_blank">best classes ever</a>. During the summers, I worked in <a href="http://www.fd.org" target="_blank">public service</a>, and at a <a href="http://www.wsgr.com" target="_blank">large tech law firm</a> in Palo Alto. Since law school, I have been serving on active duty in the Army, working in the Army Office of the General Counsel at the Pentagon. I leave the Army in August.</p>
+            <hr class="visible-phone">
+       </div>
+    </div>
+    <div class="row">
+        <div class="span4 offset4 pagination-centered" id="contact">
+            <h2>Let's get in touch:</h2>
+            <div class="social-box">
+                <a href="mailto:chas@aptible.com"><img src="images/google-icon.png"></a>
+                <a href="http://www.linkedin.com/in/chasballew" target="_blank"><img src="images/linkedin-icon.png"></a>
+                <a href="https://twitter.com/ChasBallew" target="_blank"><img src="images/twitter-icon.png"></a>
+                <a href="http://github.com/chasballew/" target="_blank"><img src="images/github-icon.png"></a>
+            </div>
         </div>
     </div>
 </div>
-    <div class="container">
-        <hr>
-    
-        <footer>
-            <p>&copy; Company 2012</p>
-        </footer>
-    </div>
 
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+        <div class="container" id="footer">
+            <hr>
+            <footer>
+                <p class="text-center"><small>&copy; c/b 2013</small></p>
+            </footer>
+        </div>
 
-  </body>
+        <script type="text/javascript">
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-40543110-2']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+        </script>
+    </body>
 </html>
