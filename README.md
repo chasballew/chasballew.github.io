@@ -1,4 +1,4 @@
 # Chas Ballew
 
-My personal website, hosted at <chasballew.com>
+My personal website, hosted at <http://www.chasballew.com>
 
