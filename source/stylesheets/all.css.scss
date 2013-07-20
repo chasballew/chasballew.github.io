@@ -25,7 +25,6 @@ $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
    ========================================================================== */
 
 body {
-	padding-top:40px;
 	background: url(http://static.chasballew.com/images/cream_dust.png);
 }
 
@@ -44,7 +43,7 @@ font-weight: normal;
 	width: 100%;
 	@include border-bottom-radius(10px);
 	border: 1px solid rgba(153,153,153,0.8);
-	/*min-width: 320px; */
+	border-top:none;
 }
 
 .header-container {
@@ -62,7 +61,6 @@ font-weight: normal;
 		font-size: 100px;
 		line-height: 83px;
 		font-weight: 600;
-	
 	}
 }
 
