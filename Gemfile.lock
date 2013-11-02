@@ -123,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass (~> 0.12.2)
   middleman (~> 3.0.14)
   middleman-livereload
   middleman-smusher

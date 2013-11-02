@@ -7,3 +7,5 @@ gem "middleman", "~>3.0.14"
 # gem "middleman-smusher"
 gem "middleman-livereload"
 gem "middleman-smusher"
+
+gem "compass", "~> 0.12.2"
