@@ -2,20 +2,12 @@
 
 /* include Boostrap overrides here */ 
 /* see bootstrap/_variables.scss for what you can override */
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Arvo, Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 
-/*$navbarBackgroundHighlight: #003366;
-$navbarLinkColor: 			#fff;
-$navbarLinkColorHover:		#999;
-$navbarLinkColorActive:		#555;
-$textColor: #555; */
-
-$sansFontFamily:        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serifFontFamily:       Arvo, Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
-
-/* remove responsive if you want */
- @import "bootstrap/bootstrap-custom";
-
+/* edit bootstrap-custom to pick modules */
+@import "bootstrap/bootstrap-custom";
 
 /* ==========================================================================
    Custom styles
@@ -23,6 +15,18 @@ $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 body {
 	background: url(http://static.chasballew.com/images/cream_dust.png);
+}
+
+#title-row {
+	border-bottom: 1px black;
+}
+
+#profile-pic {
+	width: 140px;
+	height: 140px;
+	background: url(http://gravatar.com/avatar/446c742f32040bd5adfa7a45b01bb827?s=300);
+	background-size: contain;
+	margin: auto auto;
 }
 
 
@@ -63,5 +67,3 @@ body {
 @media (max-width: 480px) {
 
 }
-
-
