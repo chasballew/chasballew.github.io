@@ -5,6 +5,8 @@
 
 /* put custom js here */
 
-// $(document).ready(function(){
-// 	$(".nav-collapse").localScroll();
-// });
+$(document).ready(function(){
+	$("#header").localScroll({
+		hash: false
+	});
+});

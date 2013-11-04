@@ -19,9 +19,12 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 
         <%= stylesheet_link_tag "all" %>
-        <%= javascript_include_tag  "all" %>
 
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+        <%= javascript_include_tag  "all" %>
+        <!-- blocks rendering while loading, per Adobe -->
+        <script type="text/javascript" src="//use.typekit.net/uvv2mei.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
   </head>
   
