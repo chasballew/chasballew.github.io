@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* include Boostrap overrides here */ 
+/* include Boostrap overrides here */
 /* see bootstrap/_variables.scss for what you can override */
 $font-family-sans-serif:  "museo-sans-rounded","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $header-font:			  "proxima-nova", $font-family-sans-serif;
@@ -18,7 +18,6 @@ $base-spacing: 25px;
    ========================================================================== */
 
 body {
-	background: url(http://static.chasballew.com/images/cream_dust.png);
 }
 
 div {
@@ -110,7 +109,7 @@ hr {
 @media (max-width: 979px) {
 
 }
- 
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -120,7 +119,7 @@ hr {
 @media (max-width: 767px) {
 
 }
- 
+
 @media (max-width: 680px) {
 
 }
