@@ -46,15 +46,15 @@
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
-
-set :build_dir, '_site'
 
 activate :livereload
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = "master"
+end
 
 # Build-specific configuration
 configure :build do
@@ -66,6 +66,7 @@ configure :build do
 
   activate :gzip
 
+
   # Enable cache buster
   # activate :cache_buster
 
@@ -75,7 +76,7 @@ configure :build do
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
-  # activate :smusher
+  activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
