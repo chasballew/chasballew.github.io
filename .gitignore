@@ -11,5 +11,6 @@ Thumbs.db
 
 # ignore build #
 /build
+/_site
 
 s3.md
