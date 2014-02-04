@@ -53,7 +53,7 @@ activate :livereload
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.branch = "master"
+  deploy.branch = 'master'
 end
 
 # Build-specific configuration
