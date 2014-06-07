@@ -2,126 +2,122 @@
 <!-- hello there -->
 <!-- chas at aptible dot com -->
 <html lang="en-US">
-<meta charset="utf-8">
-<title>cb</title>
-<style>
-
-  html {
-    overflow: hidden;
-  }
-
-  body {
-    margin: 0;
-    background: #fff;
-    min-width: 960;
-    height: 100%;
-  }
-
-  div {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-  }
-
-  h1, ul li {
-    color: rgba(210,210,210,1.0);
-    font-family: helvetica;
-    font-weight: 300;
-    cursor: default;
-    z-index: -1;
-    transition: color .5s;
-    -webkit-transition: color .5s;
-    text-shadow: 0px 0.5px rgba(250,250,250,1.0);
-    text-rendering: optimizeLegibility;
-  }
-
-  h1 {
-    font-size: 5.5em;
-    margin-bottom: .1em;
-    margin-top: 0px;
-  }
-
-  ul {
-    padding-left: 0px;
-    text-align: center;
-  }
-  ul li {
-    margin: 0 1em;
-    display: inline;
-  }
-
-  li:hover {
-    color: #003366;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  rect {
-    fill: none;
-    pointer-events: all;
-  }
-
-  circle {
-    fill: none;
-    stroke-width: 2.5px;
-  }
-
-</style>
-<body>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script>
-    var width = Math.max(960, innerWidth),
-        height = Math.max(500, innerHeight);
-
-    var i = 0;
-
-    var svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
-
-    svg.append("rect")
-        .attr("width", width)
-        .attr("height", height)
-        .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
-
-    function particle() {
-      var m = d3.mouse(this);
-
-      svg.insert("circle", "rect")
-          .attr("cx", m[0])
-          .attr("cy", m[1])
-          .attr("r", 1e-6)
-          .style("stroke", d3.hsl((i = (i + 1) % 900), 1, .8))
-          .style("stroke-opacity", 0.06)
-        .transition()
-          .duration(8000)
-          .ease(Math.sqrt)
-          .attr("r", 100)
-          .style("stroke-opacity", 1e-9)
-          .remove();
-
-      d3.event.preventDefault();
+  <meta charset="utf-8">
+  <title>cb</title>
+  <style>
+    html {
+      overflow: hidden;
     }
-  </script>
-  <div>
-    <h1>chas ballew</h1>
-    <ul>
-      <li><a href="https://github.com/chasballew">github</a></li>
-      <li><a href="https://twitter.com/chasballew">twitter</a></li>
-    </ul>
-  </div>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40543110-2', 'chasballew.com');
-  ga('send', 'pageview');
-  </script>
-</body>
+    body {
+      margin: 0;
+      background: #fff;
+      min-width: 960;
+      height: 100%;
+    }
+
+    div {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+    }
+
+    h1, ul li {
+      color: rgba(210,210,210,1.0);
+      font-family: helvetica;
+      font-weight: 300;
+      cursor: default;
+      z-index: -1;
+      transition: color .5s;
+      -webkit-transition: color .5s;
+      text-shadow: 0px 0.5px rgba(250,250,250,1.0);
+      text-rendering: optimizeLegibility;
+    }
+
+    h1 {
+      font-size: 5.5em;
+      margin-bottom: .1em;
+      margin-top: 0px;
+    }
+
+    ul {
+      padding-left: 0px;
+      text-align: center;
+    }
+    ul li {
+      margin: 0 1em;
+      display: inline;
+    }
+
+    li:hover {
+      color: #003366;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    rect {
+      fill: none;
+      pointer-events: all;
+    }
+
+    circle {
+      fill: none;
+      stroke-width: 2.5px;
+    }
+  </style>
+  <body>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
+      var width = Math.max(960, innerWidth),
+          height = Math.max(500, innerHeight);
+
+      var i = 0;
+
+      var svg = d3.select("body").append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+      svg.append("rect")
+          .attr("width", width)
+          .attr("height", height)
+          .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+
+      function particle() {
+        var m = d3.mouse(this);
+
+        svg.insert("circle", "rect")
+            .attr("cx", m[0])
+            .attr("cy", m[1])
+            .attr("r", 1e-6)
+            .style("stroke", d3.hsl((i = (i + 1) % 900), 1, .8))
+            .style("stroke-opacity", 0.06)
+          .transition()
+            .duration(8000)
+            .ease(Math.sqrt)
+            .attr("r", 100)
+            .style("stroke-opacity", 1e-9)
+            .remove();
+        d3.event.preventDefault();
+      }
+    </script>
+    <div>
+      <h1>chas ballew</h1>
+      <ul>
+        <li><a href="https://github.com/chasballew">github</a></li>
+        <li><a href="https://twitter.com/chasballew">twitter</a></li>
+      </ul>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40543110-2', 'chasballew.com');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
-
